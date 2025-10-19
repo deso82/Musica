@@ -56,3 +56,14 @@ class MusicGenerateRecord(models.Model):
 
     def __str__(self):
         return f"Generate Record {self.id} for {self.title or 'Untitled'}"
+
+
+class Lyrics(models.Model):
+    """Stored generated lyrics prompts and results."""
+    prompt = models.TextField(null=True, blank=True)
+    content = models.TextField()
+    created_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        preview = (self.prompt[:50] + '...') if self.prompt and len(self.prompt) > 50 else (self.prompt or 'No prompt')
+        return f"Lyrics {self.id} - {preview}"

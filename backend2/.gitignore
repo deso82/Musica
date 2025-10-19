@@ -214,3 +214,48 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Ignore common build artifacts and generated files
+# Python build / distribution
+*.pyc
+*.pyo
+*.pyd
+build/
+dist/
+eggs/
+*.egg-info/
+
+# Virtual environments (already present but be explicit for project venv names)
+venv/
+.venv/
+my_venv/
+env/
+ENV/
+
+# Django media and static files generated at runtime
+/media/
+/staticfiles/
+static/
+
+# Model / audio/image generation outputs
+/generated_audio/
+/outputs/
+/images/
+
+# Node / frontend build artifacts (if frontend in repo root)
+/node_modules/
+/build/
+/dist/
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Logs
+.log
+*.log
+
+# macOS
+.DS_Store
+
+# End of additions

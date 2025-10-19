@@ -258,4 +258,7 @@ static/
 # macOS
 .DS_Store
 
+# Explicitly ignore Python bytecode cache directories
+__pycache__/
+
 # End of additions

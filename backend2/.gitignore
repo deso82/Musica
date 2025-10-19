@@ -261,4 +261,7 @@ static/
 # Explicitly ignore Python bytecode cache directories
 __pycache__/
 
+# Ignore the api package cache directory specifically
+/musica/api/__pycache__/
+
 # End of additions

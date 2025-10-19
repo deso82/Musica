@@ -1,0 +1,28 @@
+# Generated requirements for the backend2 Django project
+# Pinned versions taken from backend virtualenv where available.
+Django==5.2.7
+django-cors-headers==4.9.0
+django-import-export==4.3.10
+tablib==3.9.0
+numpy==2.3.4
+soundfile==0.13.1
+asgiref==3.10.0
+cffi==2.0.0
+pycparser==2.23
+sqlparse==0.5.3
+sympy==1.14.0
+typing-extensions==4.15.0
+
+# Packages referenced in the code but not present in the inspected env
+# Pin or adjust versions based on your platform/GPU availability.
+requests
+torch
+torchaudio
+transformers
+diffusers
+openai
+
+# Optional: for image generation (Stable Diffusion) you may also need:
+# accelerate
+# safetensors
+# pillow
